@@ -14,12 +14,6 @@ class MainPage(BasePage):
         self.click_to_the_element(locator_q_formatted)
         return self.get_text_from_element(locator_a_formatted)
 
-
-
-
-
-
-
-
-
+    def control_text_in_main_page(self):
+        return self.get_text_from_element(MainPageLocators.SCOOTER_TEXT)
 

@@ -1,7 +1,8 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-from data import url, add_cookie_locator
+from data import add_cookie_locator
+from urls import url
 
 
 @pytest.fixture

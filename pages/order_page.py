@@ -19,6 +19,11 @@ class OrderPage(BasePage):
         self.click_to_the_element(OrderPageLocators.FINISH_ORDER_BUTTON)
         self.click_to_the_element(OrderPageLocators.CONFIRM_ORDER)
 
-    def check_status(self):
+    def control_next_button(self):
+        self.find_element_with_wait(OrderPageLocators.NEXT_BUTTON)
+
+    def control_status(self):
         return self.get_text_from_element(OrderPageLocators.CHECK_STATUS)
 
+    def control_text_in_order_page(self):
+        self.find_element_with_wait(OrderPageLocators.CHECK_ORDER_TEXT)

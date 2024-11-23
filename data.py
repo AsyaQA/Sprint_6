@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 
 
-url = 'https://qa-scooter.praktikum-services.ru/'
 add_cookie_locator = By.XPATH, '//*[contains(@class, "App_CookieButton")]'
 qa_dict = {
     0: 'Сутки — 400 рублей. Оплата курьеру — наличными или картой.',

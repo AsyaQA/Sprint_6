@@ -37,6 +37,6 @@ class TestOrderPage:
         main_page = MainPage(driver)
         order_page = OrderPage(driver)
         main_page.click_to_the_element(main_locator)
-        order_page.find_element_with_wait(OrderPageLocators.NEXT_BUTTON)
+        order_page.control_next_button()
         order_page.set_order(name, last_name, address, phone_number, metro_station, day, period)
-        assert order_page.check_status() == "Посмотреть статус"
+        assert order_page.control_status() == "Посмотреть статус"
